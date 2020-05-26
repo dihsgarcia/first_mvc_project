@@ -3,7 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SalesWebMVC.Data;
+using SalesWebMVC.Models;
 
 namespace SalesWebMVC.Migrations
 {
@@ -60,7 +60,7 @@ namespace SalesWebMVC.Migrations
 
                     b.Property<int?>("DepartmentId");
 
-                    b.Property<int>("Email");
+                    b.Property<string>("Email");
 
                     b.Property<string>("Name");
 
